@@ -1,0 +1,9 @@
+# AppleDouble resource fork files
+._*
+
+# macOS folder attribute files
+.DS_Store
+
+# Python bytecode files
+__pycache__/
+*.py[cod]

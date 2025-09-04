@@ -1,0 +1,6 @@
+numpy==1.24.3
+torch==2.0.1
+Pillow==11.3.0
+wandb==0.21.2
+git+https://github.com/DIAGNijmegen/pathology-whole-slide-data@1e4c6ca939c5e372a0b626739c24443f31bff505
+git+https://github.com/DIAGNijmegen/nnUNet-for-pathology.git@92cf757fac30a0e73a7a5f7caa5cd58bd08a4660#egg=nnunetv2
