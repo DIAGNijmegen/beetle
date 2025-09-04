@@ -13,7 +13,6 @@ RUN mkdir -p $nnUNet_raw $nnUNet_preprocessed $nnUNet_results
 # Update package lists and install required packages
 RUN apt-get update && apt-get install -y \
         git \
-        openssh-server \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -22,9 +21,6 @@ COPY requirements.txt /tmp/requirements.txt
 
 # Install Python dependencies
 RUN python3 -m pip install --no-cache-dir -r /tmp/requirements.txt
-
-# For (VS code) ssh connection 
-RUN mkdir /var/run/sshd
 
 # Default entrypoint
 ENTRYPOINT ["/bin/bash"]
