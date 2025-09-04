@@ -10,17 +10,18 @@ ENV nnUNet_raw=/tmp/nnUNet_raw \
 # Create nnU-Net directories
 RUN mkdir -p $nnUNet_raw $nnUNet_preprocessed $nnUNet_results
 
-# Update package lists and install required packages
-RUN apt-get update && apt-get install -y \
-        git \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+# Install system dependencies
+RUN apt-get update && apt-get install -y git && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements.txt into the image
-COPY requirements.txt /tmp/requirements.txt
+# Set working directory
+WORKDIR /app
+
+# Copy requirements file
+COPY code/docker/requirements.txt /app/requirements.txt
 
 # Install Python dependencies
-RUN python3 -m pip install --no-cache-dir -r /tmp/requirements.txt
+RUN python3 -m pip install --no-cache-dir -r /app/requirements.txt
 
 # Default entrypoint
 ENTRYPOINT ["/bin/bash"]
