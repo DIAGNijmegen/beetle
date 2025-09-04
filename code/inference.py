@@ -80,10 +80,6 @@ if __name__ == "__main__":
     ROI_FOLDER = "../../data/images/evaluation/rois"
     OUTPUT_FOLDER = "../../data/inference"
 
-    MODEL_BASE_PATH = "/data/pa_cpgarchive/projects/breast-epithelium-segmentation/breast-multiclass-segmentation/paper/zenodo/model/nnUNetTrainer_WSD_wei_i0_nnunet_aug_json__nnUNetWholeSlideDataPlans__wsd_None_iterator_nnunet_aug__2d"
-    ROI_FOLDER = "/data/pa_cpgarchive/projects/breast-epithelium-segmentation/breast-multiclass-segmentation/paper/zenodo/images/evaluation/rois"
-    OUTPUT_FOLDER = "/data/temporary/carlijn"
-
     print("Running inference...")
     main(
         model_base_path=MODEL_BASE_PATH,
