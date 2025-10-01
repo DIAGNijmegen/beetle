@@ -41,7 +41,7 @@ We describe additional details regarding the datasets on our [Zenodo data reposi
 2. To run code for running inference, build the [Docker](code/docker/Dockerfile). Then use the script: [`code/docker/run_inference.sh`](code/docker/run_inference.sh)
 
 ### Citation & license
-This GitHub repository is released under the [Apache-2.0 license](LICENSE) license. The data of the BEETLE dataset is released under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+This GitHub repository is released under the [Apache-2.0 license](LICENSE). The data of the BEETLE dataset is released under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
 If you use this dataset, please cite:
 ```
