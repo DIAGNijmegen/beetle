@@ -47,5 +47,13 @@ This GitHub repository is released under the [Apache-2.0 license](LICENSE). The 
 
 If you use this dataset, please cite:
 ```
-<PREPRINT FORTHCOMING>
+@misc{lems2025beetle,
+    title={A Multicentric Dataset for Training and Benchmarking Breast Cancer Segmentation in H&E Slides},
+    author={Carlijn Lems and Leslie Tessier and John-Melle Bokhorst and Mart van Rijthoven and Witali Aswolinskiy and Matteo Pozzi and Natalie Klubickova and Suzanne Dintzis and Michela Campora and Maschenka Balkenhol and Peter Bult and Joey Spronck and Thomas Detone and Mattia Barbareschi and Enrico Munari and Giuseppe Bogina and Jelle Wesseling and Esther H. Lips and Francesco Ciompi and Frédérique Meeuwsen and Jeroen van der Laak},
+    year={2025},
+    eprint={2510.02037},
+    archivePrefix={arXiv},
+    primaryClass={q-bio.QM},
+    url={https://arxiv.org/abs/2510.02037},
+}
 ```
