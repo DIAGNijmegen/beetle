@@ -2,14 +2,14 @@
 
 <img width="5264" height="1054" alt="banner" src="https://github.com/user-attachments/assets/64a39678-6a75-44d3-83fe-9884c43c3ba6" />
 
-> Automated semantic segmentation of whole-slide images (WSIs) stained with hematoxylin and eosin (H&E) is essential for large-scale artificial intelligence-based biomarker analysis in breast cancer. However, existing public datasets for breast cancer segmentation lack the morphological diversity needed to support model generalizability and robust biomarker validation across heterogeneous patient cohorts. We introduce BrEast cancEr hisTopathoLogy sEgmentation (BEETLE), a dataset for multiclass semantic segmentation of H&E-stained breast cancer WSIs. It consists of 587 biopsies and resections from three collaborating clinical centers and two public datasets, digitized using seven scanners, and covers all molecular subtypes and histological grades. Using diverse annotation strategies, we collected annotations across four classes - invasive epithelium, non-invasive epithelium, necrosis, and other - with particular focus on morphologies underrepresented in existing datasets, such as ductal carcinoma in situ and dispersed lobular tumor cells. The dataset's diversity and relevance to the rapidly growing field of automated biomarker quantification in breast cancer ensure its high potential for reuse. Finally, we provide a well-curated, multicentric external evaluation set to enable standardized benchmarking of breast cancer segmentation models.
+> Automated semantic segmentation of whole-slide images (WSIs) stained with hematoxylin and eosin (H&E) is essential for large-scale artificial intelligence-based biomarker analysis in breast cancer. However, existing public datasets for breast cancer segmentation lack the morphological diversity needed to support model generalizability and robust biomarker validation across heterogeneous patient cohorts. We introduce BrEast cancEr hisTopathoLogy sEgmentation (BEETLE), a dataset for multiclass semantic segmentation of H&E-stained breast cancer WSIs. The development set consists of 587 WSIs of biopsy and resection specimens from 527 patients across three collaborating clinical centers and two public datasets, digitized using seven scanners, and covers all molecular subtypes and histological grades. Using diverse annotation strategies, we collected annotations across four classes - invasive epithelium, non-invasive epithelium, necrosis, and other - with particular focus on morphologies underrepresented in existing datasets, such as ductal carcinoma in situ and dispersed lobular tumor cells. The dataset's diversity and relevance to the rapidly growing field of automated biomarker quantification in breast cancer ensure its high potential for reuse. Finally, we provide a well-curated, multicentric external evaluation set to enable standardized benchmarking of breast cancer segmentation models.
 
 ### Repository layout
 
 Welcome to the GitHub repository for the BEETLE dataset. This repository provides:
 
 * Code to download the dataset from the associated [Zenodo repository](https://zenodo.org/records/16812932)
-* Code to run inference using the model trained on the dataset for technical validation
+* Code to run inference using the nnU-Net model trained on the dataset for technical validation
 
 The repository is laid out as follows:
 
@@ -31,7 +31,7 @@ The repository is laid out as follows:
     │       ├── rois/      # PNG images of ROIs for evaluation
     │       └── wsis/      # Whole-slide images for evaluation
     │
-    └── model/             # Weights of the final ensemble model used for technical validation
+    └── model/             # Weights of the final ensemble nnU-Net model used for technical validation
 ```
 
 * The [`code/`](code/) contains Python code for running inference on the evaluation set.
