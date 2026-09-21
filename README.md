@@ -40,7 +40,7 @@ We describe additional details regarding the datasets on our [Zenodo data reposi
 
 ### nnU-Net model
 
-The nnU-Net model used for technical validation was trained using [nnU-Net-for-Pathology](https://github.com/DIAGNijmegen/nnUNet-for-pathology), `nnunet_for_pathology_v2` branch, at commit [ea9244701500adae7646c4cbcea6da4e38fb6efa](https://github.com/DIAGNijmegen/nnUNet-for-pathology/commit/ea9244701500adae7646c4cbcea6da4e38fb6efa).
+The nnU-Net model used for technical validation was trained using [nnU-Net-for-Pathology](https://github.com/DIAGNijmegen/nnUNet-for-pathology), `nnunet_for_pathology_v2` branch, at commit [`ea9244701500adae7646c4cbcea6da4e38fb6efa`](https://github.com/DIAGNijmegen/nnUNet-for-pathology/commit/ea9244701500adae7646c4cbcea6da4e38fb6efa). The HED augmentation settings were taken from the preceding commit and set to `hem=0.05`, `eos=0.05`, `dab=0.05`, with a probability of `1`. We trained the networks using the `nnUNetTrainer_WSD_wei_i0_nnunet_aug_json` trainer variant. 
 
 ### Quickstart guide
 1. Download all data from Zenodo by running the `download_all.sh` shell script. All data is automatically organized in the directory layout as described above.
