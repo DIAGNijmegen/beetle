@@ -31,12 +31,16 @@ The repository is laid out as follows:
     │       ├── rois/      # PNG images of ROIs for evaluation
     │       └── wsis/      # Whole-slide images for evaluation
     │
-    └── model/             # Weights of the final ensemble nnU-Net model used for technical validation
+    └── model/             # Weights of the final ensemble nnU-Net model used for technical validation, together with the dataset.json used for training
 ```
 
 * The [`code/`](code/) contains Python code for running inference on the evaluation set.
 
 We describe additional details regarding the datasets on our [Zenodo data repository](https://zenodo.org/records/16812932).
+
+### nnU-Net model
+
+The nnU-Net model used for technical validation was trained using [nnU-Net-for-Pathology](https://github.com/DIAGNijmegen/nnUNet-for-pathology), `nnunet_for_pathology_v2` branch, at commit [ea9244701500adae7646c4cbcea6da4e38fb6efa](https://github.com/DIAGNijmegen/nnUNet-for-pathology/commit/ea9244701500adae7646c4cbcea6da4e38fb6efa).
 
 ### Quickstart guide
 1. Download all data from Zenodo by running the `download_all.sh` shell script. All data is automatically organized in the directory layout as described above.
